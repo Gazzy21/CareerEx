@@ -112,20 +112,15 @@ main {
 }
 
 .hero1 {
-  background: url("rockethero1.webp");
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
+  background: url("rockethero1.webp") center/cover no-repeat; /* Update background properties */
+  height: 50vh; /* Set a fixed height using viewport height */
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  align-items: center;
-  text-align: center;
   display: flex;
-}
-
-.orbitron {
-  font-family: "Orbitron", sans-serif;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  text-align: center;
 }
 
 .orbitronwhite {
@@ -133,3 +128,6 @@ main {
   color: white;
 }
 
+.border1 {
+  
+}
