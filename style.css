@@ -148,45 +148,11 @@ body {
 }
 
 .gradient-border {
-  --border-width: 3px;
-
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Lato, sans-serif;
-  color: white;
-  background: #222;
-  border-radius: var(--border-width);
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: calc(-1 * var(--border-width));
-    left: calc(-1 * var(--border-width));
-    z-index: -1;
-    width: calc(100% + var(--border-width) * 2);
-    height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(
-      60deg,
-      hsl(223, 64%, 98%),
-      hsl(0, 0%, 60%),
-      hsl(223, 64%, 98%),
-      hsl(0, 0%, 60%),
-      hsl(223, 64%, 98%),
-      hsl(0, 0%, 80%),
-      hsl(223, 64%, 98%),
-      hsl(0, 0%, 80%)
-    );
-    background-size: 300% 300%;
-    background-position: 0 50%;
-    border-radius: calc(2 * var(--border-width));
-    animation: moveGradient 4s alternate infinite;
-  }
+  border: white solid 4px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 10px;
 }
 
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
+.textlarge {
+  font-size: 30px;
 }
